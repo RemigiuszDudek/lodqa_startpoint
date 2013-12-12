@@ -14,12 +14,7 @@
         <property name="homePage" ref="homePage"/>
     </bean>
 
-    <bean id="jBehaveAbstractWebScenario" class="system.web.JBehaveAbstractWebScenario">
-        <property name="homePageFacade" ref="homePageFacade"/>
-        <property name="driverProvider" ref="driverProvider"/>
-    </bean>
-
-    <bean id="webDriverProvider" class="org.jbehave.web.selenium.PerStoryWebDriverSteps">
+    <bean id="perStoryWebDriverSteps" class="org.jbehave.web.selenium.PerStoryWebDriverSteps">
         <constructor-arg ref="driverProvider"/>
     </bean>
 
